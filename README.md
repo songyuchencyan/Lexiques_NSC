@@ -97,4 +97,10 @@ Ces lexiques servent à étudier le vocabulaire et l'usage du mot en naija, et �
 
 ### 
 ### Erreurs
+  * **erreur_forme.txt** : fichier qui enregistre les erreurs sur la forme.
+  * **erreur_pos_unique_avec_phrase.txt** : fichier qui enregistre les erreurs sur la partie du discours corrigées automatiquement avec les informations complète de la phrase.
+  * **erreur_pos_ambigu_avec_phrase.txt** : fichier qui enregistre les erreurs sur la partie du discours corrigées manuellement avec les informations complète de la phrase.
+  * **erreur_trait.xlsx** : fichier qui enregistre les erreurs sur les traits morphologiques.  
+  * **frequence_erreur_pos_unique.xlsx** : fichier qui enregistre les occurrences des erreurs sur la partie du discours corrigées automatiquement.
+  * **frequence_erreur_pos_ambigu.xlsx** : fichier qui enregistre les occurrences des erreurs sur la partie du discours corrigées manuellemente.
 
