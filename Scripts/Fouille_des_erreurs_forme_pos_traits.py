@@ -53,10 +53,10 @@ conll = parse(conll)
 
 ###### Files to write ######
 f = open('Correction_80_conll_ref_add.conllu', 'w', encoding='UTF-8') # Insérer le chemin absolu du fichier CONLL-U corrigé
-f_erreur_form = open('erreur_forme.txt', 'w') # Insérer le chemin absolu du fichier qui enregistrer les errerus sur la forme
-f_erreur_pos_unique = open('erreur_pos_unique.txt', 'w') # Insérer le chemin absolu du fichier qui enregistrer les errerus sur la partie du discours corrigées automatiquement
-f_erreur_pos_ambigu = open('erreur_pos_ambigu.txt', 'w') # Insérer le chemin absolu du fichier qui enregistrer les errerus sur la partie du discours corrigées manuellement
-f_erreur_trait = open('erreur_trait.txt', 'w') # Insérer le chemin absolu du fichier qui enregistrer les errerus sur les traits morphologiques
+f_erreur_form = open('erreur_forme.txt', 'w') # Insérer le chemin absolu du fichier qui enregistrer les erreurs sur la forme
+f_erreur_pos_unique = open('erreur_pos_unique.txt', 'w') # Insérer le chemin absolu du fichier qui enregistrer les erreurs sur la partie du discours corrigées automatiquement
+f_erreur_pos_ambigu = open('erreur_pos_ambigu.txt', 'w') # Insérer le chemin absolu du fichier qui enregistrer les erreurs sur la partie du discours corrigées manuellement
+f_erreur_trait = open('erreur_trait.txt', 'w') # Insérer le chemin absolu du fichier qui enregistrer les erreurs sur les traits morphologiques
 ###### Files to write ######
 
 ###### Start error checking and error logging ######
