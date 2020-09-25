@@ -66,7 +66,12 @@ Ces lexiques servent à étudier le vocabulaire et l'usage du mot en naija, et �
       f_erreur_trait = open('erreur_trait.txt', 'w') # Insérer le chemin absolu du fichier qui enregistrer les errerus sur les traits morphologiques
       ###### Files to write ######
       ```
-
+### 
+  * **Ensemble_infos_arguments_potentiels.py** : le script produire des ensembles d'informations qui indique des arguments potentiels avec toutes ses informations syntaxiques et morphologiques pour chaque token du treebank.
+      ```Python
+      f = open('dic_souscat_fullinfo.tsv', 'w') # Insérer le chemin absolu du fichier qui engistre des ensembles d'informations extraits
+      trees = conllFile2trees('80_corpus_old.conllu') # Insérer le chemin absolu du fichier CONLL-U, la fonction "conllFile2trees" permet de convertit un arbre CONLL-U des chaîne de caractères en dictionnaire 
+      ```
 
 
 ###
