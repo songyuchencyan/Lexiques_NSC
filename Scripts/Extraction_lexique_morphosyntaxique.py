@@ -14,6 +14,7 @@ time_start=time.time()
 liste_noms_fichiers = ["80_corpus_concat.conllu"]
 folder_path = "."
 # for files in file_list:
+    # fichier_conll = open(folder_path + "/" + files,"r", encoding="UTF-8")
 for fichier in liste_noms_fichiers:
     fichier_conll = open(folder_path + "/" + fichier,"r", encoding="UTF-8")
     # Lire le fichier conll ligne par ligne
