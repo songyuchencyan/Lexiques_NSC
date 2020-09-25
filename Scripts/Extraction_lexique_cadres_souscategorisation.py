@@ -201,8 +201,8 @@ def get_frames(lemmaposfre, one_group_set):
 if __name__ == "__main__":
     time_start=time.time()
 
-    f = open('dic_souscat_fullinfo.tsv', 'r', encoding='UTF-8')
-    f_input = open('input_final.tsv', 'w', encoding='UTF-8')
+    f = open('Ensemble_infos_arguments_potentiels.tsv', 'r', encoding='UTF-8')
+    f_input = open('Lexique de sous-catégorisation.tsv', 'w', encoding='UTF-8')
     conll_content = f.read()
     trans = get_trans_content(conll_content)
     lemmapos_list = get_lemmapos_list(trans)
