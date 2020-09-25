@@ -11,7 +11,8 @@ Ces lexiques servent à étudier le vocabulaire et l'usage du mot en naija, et �
 
 ## 
 ## Catalogue
-###  
+### 
+### 
 ### Lexiques
   * **Lexique morphosyntaxique.xlsx** : le lexique morphosyntaxique comporte 6 colonnes, les cinq premières colonnes contiennent les informations sur la forme, la partie du discours, les traits morphologiques, le lemme et la glose du token. La sixième est la colonne de commentaire où nous pouvons partager nos diverses opinions pour obtenir le meilleur résultat.
   * **Ensemble_infos_arguments_potentiels.tsv** : chaque entrée est un ensemble d'informations qui indique des arguments potentiels avec toutes ses informations syntaxiques et morphologiques pour chaque token du treebank.
@@ -82,15 +83,17 @@ Ces lexiques servent à étudier le vocabulaire et l'usage du mot en naija, et �
   * **Ensemble_infos_arguments_potentiels.py** : le script produire des ensembles d'informations qui indique des arguments potentiels avec toutes ses informations syntaxiques et morphologiques pour chaque token du treebank.
       ```Python
       f = open('dic_souscat_fullinfo.tsv', 'w') # Insérer le chemin absolu du fichier qui engistre des ensembles d'informations extraits
-      trees = conllFile2trees('80_corpus_old.conllu') # Insérer le chemin absolu du fichier CONLL-U, la fonction "conllFile2trees" permet de convertit un arbre CONLL-U des chaîne de caractères en dictionnaire 
+      trees = conllFile2trees('80_corpus_old.conllu') # Insérer le chemin absolu du fichier CONLL-U, la fonction "conllFile2trees" permet de convertir un arbre CONLL-U des chaîne de caractères en dictionnaire 
       ```
-      
+   
 ### 
   * **Extraction_lexique_cadres_souscategorisation.py** : le script regroupement des informations de sous-catégorisations identiques du même token en une seule entrée à partir du fichier "*Ensemble_infos_arguments_potentiels.tsv*" produit par le script "*Ensemble_infos_arguments_potentiels.py*".
       ```Python
       f = open('Ensemble_infos_arguments_potentiels.tsv', 'r', encoding='UTF-8') # Insérer le chemin absolu du fichier qui enregistre des ensembles d'informations des arguments potentiels produit par le script "Ensemble_infos_arguments_potentiels.py"
       f_input = open('Lexique de sous-catégorisation.tsv', 'w', encoding='UTF-8') # Insérer le chemin absolu du lexique de cadres de sous-catégorisation
       ```
+### 
+  * **conllnaija.py** : le script contient des fonctions utiles qui permet de convertir des arbres au format CONLL-U des chaîne de caractères en dictionnaire, telles que "*conllFile2trees*" et "*conll2tree*".
 
 ### 
 ### Erreurs
