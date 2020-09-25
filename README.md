@@ -20,8 +20,17 @@ Ces lexiques servent à étudier le vocabulaire et l'usage du mot en naija, et �
 ### 
 ### Scripts
   * **Extraction_lexique_morphosyntaxique.py** : le script prend une liste des fichiers CONLL-U et extrait des infos nécessaires pour construire un lexique morphosyntaxique.
+     * 1.
      ```Python
-     open
+     liste_noms_fichiers = ["80_corpus_concat.conllu"] // Insérez les noms des fichiers CONLL-U dans cette liste
      ```
+     ```Python
+     folder_path = "." // Insérez le chemin absolu qui contient des fichiers CONLL-U de la liste "liste_noms_fichiers"
+     ```
+     ```Python
+     lexique = open("Lexique.txt","a", encoding="UTF-8") // Insérez le chemin absolu du fichier de lexique morphosyntaxique
+     voir_lexique = open("Lexique.txt","r", encoding="UTF-8") // Insérez le chemin absolu du fichier de lexique morphosyntaxique
+     ```
+     
 ### Erreurs
 
