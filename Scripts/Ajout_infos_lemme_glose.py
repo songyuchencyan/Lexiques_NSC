@@ -19,7 +19,7 @@ def get_lexique_maju_mini(lexique):
     return lexique_maju_mini
 
 ###### Read lexique file and get word list with standardized capitalization ######
-with open('Final_Complete_Gold_Lexicon_BC_for_Yuchen_26.02.2020.txt', 'r') as f:
+with open('Final_Complete_Gold_Lexicon_BC_for_Yuchen_26.02.2020.txt', 'r') as f: # Insérer le chemin absolu du lexique morphosyntaxique
     lexique = f.readlines()
 lexique = [x.strip('\n').split('\t') for x in lexique]
 lexique = get_lexique_maju_mini(lexique)
@@ -45,7 +45,7 @@ def get_lexique_ambigu(lexique_form, lexique_form_pos):
 lexique_ambigu = get_lexique_ambigu(lexique_form, lexique_form_pos)
 
 ###### Read conll file and get list of sentences with conll format ######
-with open('Correction_80_conll_ref_add.conllu', 'r', encoding='UTF-8') as f:
+with open('Correction_80_conll_ref_add.conllu', 'r', encoding='UTF-8') as f: # Insérer le chemin absolu du fichier CONLL-U à traiter
     conll = f.read()
 conll = parse(conll)
 ###### Read conll file and get list of sentences with conll format ######
