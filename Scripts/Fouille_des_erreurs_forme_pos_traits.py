@@ -29,7 +29,7 @@ def get_lexique_ambigu(lexique_form, lexique_form_pos):
     return form_ambigu
 
 ###### Read lexique file and get word list with standardized capitalization ######
-with open('Final_Complete_Gold_Lexicon_BC_for_Yuchen_26.02.2020.txt', 'r') as f: 
+with open('Final_Complete_Gold_Lexicon_BC_for_Yuchen_26.02.2020.txt', 'r') as f: # Insérer le chemin absolu du lexique morphosyntaxique
     lexique = f.readlines()
 lexique = [x.strip('\n').split('\t') for x in lexique]
 lexique = get_lexique_maju_mini(lexique)
@@ -46,17 +46,17 @@ lexique_ambigu = get_lexique_ambigu(lexique_form, lexique_form_pos)
 ###### List of words with multiple POS ######
 
 ###### Read conll file and get list of sentences with conll format ######
-with open('1408.conllu', 'r', encoding='UTF-8') as f:
+with open('1408.conllu', 'r', encoding='UTF-8') as f: # Insérer le chemin absolu du fichier CONLL-U à traiter
     conll = f.read()
 conll = parse(conll)
 ###### Read conll file and get list of sentences with conll format ######
 
 ###### Files to write ######
-f = open('Correction_80_conll_ref_add.conllu', 'w', encoding='UTF-8')
-f_erreur_form = open('erreur_forme.txt', 'w')
-f_erreur_pos_unique = open('erreur_pos_unique.txt', 'w')
-f_erreur_pos_ambigu = open('erreur_pos_ambigu.txt', 'w')
-f_erreur_trait = open('erreur_trait.txt', 'w')
+f = open('Correction_80_conll_ref_add.conllu', 'w', encoding='UTF-8') # Insérer le chemin absolu du fichier CONLL-U corrigé
+f_erreur_form = open('erreur_forme.txt', 'w') # Insérer le chemin absolu du fichier qui enregistrer les errerus sur la forme
+f_erreur_pos_unique = open('erreur_pos_unique.txt', 'w') # Insérer le chemin absolu du fichier qui enregistrer les errerus sur la partie du discours corrigées automatiquement
+f_erreur_pos_ambigu = open('erreur_pos_ambigu.txt', 'w') # Insérer le chemin absolu du fichier qui enregistrer les errerus sur la partie du discours corrigées manuellement
+f_erreur_trait = open('erreur_trait.txt', 'w') # Insérer le chemin absolu du fichier qui enregistrer les errerus sur les traits morphologiques
 ###### Files to write ######
 
 ###### Start error checking and error logging ######
