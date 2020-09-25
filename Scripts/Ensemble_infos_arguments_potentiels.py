@@ -34,7 +34,7 @@ def find_gov(token):
 
 
 f = open('dic_souscat_fullinfo.tsv', 'w') # Insérer le chemin absolu du fichier qui enregistre des ensembles d'informations extraits
-trees = conllFile2trees('80_corpus_old.conllu')  # Insérer le chemin absolu du fichier CONLL-U, la fonction "conllFile2trees" permet de convertit un arbre CONLL-U des chaîne de caractères en dictionnaire 
+trees = conllFile2trees('80_corpus_old.conllu')  # Insérer le chemin absolu du fichier CONLL-U, la fonction "conllFile2trees" permet de convertit un arbre CONLL-U des chaînes de caractères en dictionnaire 
 for tree in trees:
     exemple = re.findall('text: (.+)\n', str(tree))[0]
     tree.addkids()  # 把子关系添加到tree / add kid relation to tree
