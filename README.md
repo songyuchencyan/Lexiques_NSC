@@ -20,7 +20,7 @@ Ces lexiques servent à étudier le vocabulaire et l'usage du mot en naija, et �
 
 ### 
 ### Scripts
-  * **Extraction_lexique_morphosyntaxique.py** : le script prend une liste des fichiers CONLL-U et extrait des infos nécessaires pour construire un lexique morphosyntaxique. S'il existe déja des entrées dans le lexique, l'algorithme peut exclure les doublons et n'ajoutera que les nouvelles entrées. 
+  * **Extraction_lexique_morphosyntaxique.py** : le script prend une liste des fichiers CONLL-U et extrait des infos nécessaires pour construire un lexique morphosyntaxique. S'il existe déjà des entrées dans le lexique, l'algorithme peut exclure les doublons et n'ajoutera que les nouvelles entrées. 
     * Mode 1.
       ```Python
       liste_noms_fichiers = ["80_corpus_concat.conllu"] # Insérez les noms des fichiers CONLL-U dans cette liste
@@ -47,6 +47,27 @@ Ces lexiques servent à étudier le vocabulaire et l'usage du mot en naija, et �
       lexique = open("Lexique.txt","a", encoding="UTF-8") # Insérez le chemin absolu du fichier de lexique morphosyntaxique
       voir_lexique = open("Lexique.txt","r", encoding="UTF-8") # Insérez le chemin absolu du fichier de lexique morphosyntaxique
       ```
-     
+###
+  * **Fouille_des_erreurs_forme_pos_traits.py** : le script recherche les erreurs d'annotation sur la forme, la partie du discours et les trait morphologiques, et enregistre les erreurs détectées.
+      ```Python
+      with open('Final_Complete_Gold_Lexicon_BC_for_Yuchen_26.02.2020.txt', 'r') as f: # Insérer le chemin absolu du lexique morphosyntaxique
+      lexique = f.readlines()
+      ```
+      ```Python
+      with open('1408.conllu', 'r', encoding='UTF-8') as f: # Insérer le chemin absolu du fichier CONLL-U à traiter
+      ```
+      ```Python
+      ###### Files to write ######
+      f = open('Correction_80_conll_ref_add.conllu', 'w', encoding='UTF-8') # Insérer le chemin absolu du fichier CONLL-U corrigé
+      f_erreur_form = open('erreur_forme.txt', 'w') # Insérer le chemin absolu du fichier qui enregistrer les errerus sur la forme
+      f_erreur_pos_unique = open('erreur_pos_unique.txt', 'w') # Insérer le chemin absolu du fichier qui enregistrer les errerus sur la partie du discours corrigées automatiquement
+      f_erreur_pos_ambigu = open('erreur_pos_ambigu.txt', 'w') # Insérer le chemin absolu du fichier qui enregistrer les errerus sur la partie du discours corrigées manuellement
+      f_erreur_trait = open('erreur_trait.txt', 'w') # Insérer le chemin absolu du fichier qui enregistrer les errerus sur les traits morphologiques
+      ###### Files to write ######
+      ```
+
+
+
+###
 ### Erreurs
 
