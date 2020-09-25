@@ -23,20 +23,20 @@ Ces lexiques servent à étudier le vocabulaire et l'usage du mot en naija, et �
   * **Extraction_lexique_morphosyntaxique.py** : le script prend une liste des fichiers CONLL-U et extrait des infos nécessaires pour construire un lexique morphosyntaxique. S'il existe déja des entrées dans le lexique, l'algorithme peut exclure les doublons et n'ajoutera que les nouvelles entrées. 
     * Mode 1.
       ```Python
-      liste_noms_fichiers = ["80_corpus_concat.conllu"] //Insérez les noms des fichiers CONLL-U dans cette liste
+      liste_noms_fichiers = ["80_corpus_concat.conllu"] # Insérez les noms des fichiers CONLL-U dans cette liste
       ```
       ```Python
-      folder_path = "." //Insérez le chemin absolu qui contient des fichiers CONLL-U de la liste "liste_noms_fichiers"
+      folder_path = "." # Insérez le chemin absolu qui contient des fichiers CONLL-U de la liste "liste_noms_fichiers"
       ```
       ```Python
-      for fichier in liste_noms_fichiers: //Parcourir tous les fichiers CONLL-U de la liste
-          fichier_conll = open(folder_path + "/" + fichier,"r", encoding="UTF-8") //Lire chaque fichier CONLL-U de la liste
+      for fichier in liste_noms_fichiers: # Parcourir tous les fichiers CONLL-U de la liste
+          fichier_conll = open(folder_path + "/" + fichier,"r", encoding="UTF-8") # Lire chaque fichier CONLL-U de la liste
       ```
       ```Python
-      lexique = open("Lexique.txt","a", encoding="UTF-8") //Insérez le chemin absolu du fichier de lexique morphosyntaxique
-      voir_lexique = open("Lexique.txt","r", encoding="UTF-8") //Insérez le chemin absolu du fichier de lexique morphosyntaxique
+      lexique = open("Lexique.txt","a", encoding="UTF-8") # Insérez le chemin absolu du fichier de lexique morphosyntaxique
+      voir_lexique = open("Lexique.txt","r", encoding="UTF-8") # Insérez le chemin absolu du fichier de lexique morphosyntaxique
       ```
-     * Mode 2. 
+    * Mode 2. 
       ```Python
       folder_path = "E:/TAL/Stage/arborator/projects/Scripts/test"  # Insérez le chemin absolu qui contient des fichiers CONLL-U 
       file_list = os.listdir(folder_path) # Liste aui contient les noms des fichiers CONLL-U
