@@ -14,12 +14,14 @@ Ces lexiques servent à étudier le vocabulaire et l'usage du mot en naija, et �
 ### 
 ### Lexiques
   * **Lexique morphosyntaxique.xlsx** : le lexique morphosyntaxique comporte 6 colonnes, les cinq premières colonnes contiennent les informations sur la forme, la partie du discours, les traits morphologiques, le lemme et la glose du token. La sixième est la colonne de commentaire où nous pouvons partager nos diverses opinions pour obtenir le meilleur résultat.
-  * **Ensemble_infos_arguments_potentiels.tsv** : Chaque entrée est un ensemble d'informations qui indique des arguments potentiels avec toutes ses informations syntaxiques et morphologiques pour chaque token du treebank.
+  * **Ensemble_infos_arguments_potentiels.tsv** : chaque entrée est un ensemble d'informations qui indique des arguments potentiels avec toutes ses informations syntaxiques et morphologiques pour chaque token du treebank.
   * **Lexique de cadres de sous-catégorisation** : le lexique de cadres de sous-catégorisation est produit automatiquement à partir du fichier *Ensemble_infos_arguments_potentiels.tsv*, il regroupe des informations de sous-catégorisations identiques du même lemme d'une catégorie en une seule entrée.
 
-
+### 
 ### Scripts
-
-
+  * **Extraction_lexique_morphosyntaxique.py** : le script prend une liste des fichiers CONLL-U et extrait des infos nécessaires pour construire un lexique morphosyntaxique.
+     ```Python
+     open
+     ```
 ### Erreurs
 
