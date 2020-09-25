@@ -24,8 +24,6 @@ Ces lexiques servent à étudier le vocabulaire et l'usage du mot en naija, et �
     * Mode 1.
       ```Python
       liste_noms_fichiers = ["80_corpus_concat.conllu"] # Insérez les noms des fichiers CONLL-U dans cette liste
-      ```
-      ```Python
       folder_path = "." # Insérez le chemin absolu qui contient des fichiers CONLL-U de la liste "liste_noms_fichiers"
       ```
       ```Python
@@ -44,6 +42,10 @@ Ces lexiques servent à étudier le vocabulaire et l'usage du mot en naija, et �
       ```Python
       for files in file_list: # Parcourir tous les fichiers CONLL-U de la liste
           fichier_conll = open(folder_path + "/" + files,"r", encoding="UTF-8") # Lire chaque fichier CONLL-U de la liste
+      ```
+      ```Python
+      lexique = open("Lexique.txt","a", encoding="UTF-8") # Insérez le chemin absolu du fichier de lexique morphosyntaxique
+      voir_lexique = open("Lexique.txt","r", encoding="UTF-8") # Insérez le chemin absolu du fichier de lexique morphosyntaxique
       ```
      
 ### Erreurs
