@@ -85,10 +85,13 @@ Ces lexiques servent à étudier le vocabulaire et l'usage du mot en naija, et �
       trees = conllFile2trees('80_corpus_old.conllu') # Insérer le chemin absolu du fichier CONLL-U, la fonction "conllFile2trees" permet de convertit un arbre CONLL-U des chaîne de caractères en dictionnaire 
       ```
       
-
+### 
+  * **Extraction_lexique_cadres_souscategorisation.py** : le script regroupement des informations de sous-catégorisations identiques du même token en une seule entrée à partir du fichier "*Ensemble_infos_arguments_potentiels.tsv*" produit par le script "*Ensemble_infos_arguments_potentiels.py*".
+      ```Python
+      f = open('Ensemble_infos_arguments_potentiels.tsv', 'r', encoding='UTF-8') # Insérer le chemin absolu du fichier qui enregistre des ensembles d'informations des arguments potentiels produit par le script "Ensemble_infos_arguments_potentiels.py"
+      f_input = open('Lexique de sous-catégorisation.tsv', 'w', encoding='UTF-8') # Insérer le chemin absolu du lexique de cadres de sous-catégorisation
       ```
 
-
-###
+### 
 ### Erreurs
 
